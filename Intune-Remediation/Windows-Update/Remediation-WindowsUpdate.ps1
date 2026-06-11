@@ -58,7 +58,7 @@ try {
         Write-Output "Scheduling immediate restart..."
         
         # Force restart immediately
-        shutdown /r /t 30 /c "Windows Updates installed by Intune. Device will restart in 30 seconds. Please save your work." /f
+        shutdown /r /t 600 /c "Windows Updates installed by Intune. Device will restart in 10 Minutes. Please save your work." /f
         
         Write-Output "Restart initiated"
         exit 0
